@@ -10,12 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"> 
     <title>Roll a dice</title>
 </head>
-<body>
+<body id="body">
 <div class="container">
-    <h1>0</h1>
+    <h1 id="result">0</h1>
     <img id="centralizar" src="imagens/dice.webp" alt="Contorno do dado">
-    <p>Sua rolagem foi de 0</p>
-    <button id="centralizar">Rolar</button>
+    <p>Sua rolagem foi de <span id="span">0</span></span></p>
+    <button id="centralizar" onclick="rolar()">Rolar</button>
 </div>
     <script  src="script.js"></script>
 </body>

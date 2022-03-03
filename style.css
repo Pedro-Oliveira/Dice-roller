@@ -1,9 +1,9 @@
 :root{
     --black: #1C1D24;
-    --dark-red: #EA2340;
+    --dark-red: #a8041d;
     --dark-green: #174240;
-    --red: #DC0000;
-    --green: #01C38D;
+    --red: #eb0404;
+    --green: #01c321;
 }
 body{
     margin: 0;
@@ -31,7 +31,7 @@ h1{
     position: absolute;
     z-index: 2;
     left: 50%;
-    top: 18%;
+    top: 20%;
     transform: translateX(-50%);
     font-size: 40px;
 }
