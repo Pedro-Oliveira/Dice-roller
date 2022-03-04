@@ -31,13 +31,15 @@ h1{
     position: absolute;
     z-index: 2;
     left: 50%;
-    top: 20%;
+    top: 19%;
     transform: translateX(-50%);
     font-size: 40px;
 }
 img{
     width: 50%;
     margin-bottom: 50px;
+    position: relative;
+    left: 25%;
 }
 p{
     text-align: center;
@@ -58,4 +60,22 @@ button:hover{
     cursor: pointer;
     background-color: #08080c;
     transition: ease 0.3s;
+}
+.spin{
+    -webkit-animation: spin 1.5s linear ;
+    -moz-animation: spin 1.5s linear ;
+    animation: spin 0.5s linear ;
+    animation-duration: 1s;
+}
+@-webkit-keyframes spin{
+    0%{-webkit-transform: rotate(0deg);}
+    100%{-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin{
+    0%{-moz-transform: rotate(0deg);}
+    100%{-moz-transform: rotate(360deg);}
+}
+@keyframes spin{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
 }

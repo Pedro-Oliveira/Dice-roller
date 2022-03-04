@@ -1,5 +1,8 @@
+let dice = document.querySelectorAll("img")
 function rolar(){
-    let rolagem = Math.floor(Math.random() * 21);
+    let rolagem = Math.floor(Math.random() * 20 +1);
+
+    spin()
     document.getElementById("result").innerHTML = rolagem;
     document.getElementById("span").innerHTML = rolagem;
     if (rolagem === 20){
@@ -14,4 +17,7 @@ function rolar(){
         document.getElementById("result").style.color = "black";
         document.getElementById("body").style.backgroundColor = "var(--black)";
     }
+}
+function spin(){
+    dado.classList.add("spin");
 }
