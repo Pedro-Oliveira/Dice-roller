@@ -9,6 +9,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: var(--black);
+    font-family: 'Poppins', sans-serif;
 }
 #centralizar{
     position: relative;
@@ -25,7 +26,6 @@ body{
     background-color: whitesmoke;
     transform: translate(-50%,-50%);
     border-radius: 8px;
-    font-family: 'Poppins', sans-serif;
 }
 h1{
     position: absolute;
@@ -47,7 +47,8 @@ p{
     font-size: 16px;
 }
 .modificador{
-    width: 150px;
+    width: 145px;
+    height: 46px;
     display: flex;
     margin-bottom: 25px;
     border: 3px solid rgb(28, 29, 36);
@@ -60,6 +61,7 @@ input[type="number"]{
     font-size: 30px;
     border: none;
     width: 80px;
+    pointer-events: none;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -70,7 +72,7 @@ button{
     color: #3264fe;
     background-color: whitesmoke;
     border: none;
-    font-size: 50px;
+    font-size: 38px;
     cursor: pointer;
 }
 .botao{

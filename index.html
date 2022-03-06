@@ -14,11 +14,11 @@
 <div class="container">
     <h1 id="result">0</h1>
     <img id="dado" src="imagens/dice.png" alt="Contorno do dado">
-    <p>Sua rolagem foi de <span id="span">0</span></p>
+    <p>Sua rolagem foi de <b><span id="span">0</span></b></p>
     <div class="modificador" id="centralizar">
-        <button id="diminuir">-</button>
-        <input type="number" min="-50" max="50" id="myinput">
-        <button id="aumentar">+</button>
+        <button id="diminuir" onclick="stepper(this)">-</button>
+        <input type="number" value="0" id="my-input">
+        <button id="aumentar" onclick="stepper(this)">+</button>
     </div>
     <button class="botao" id="centralizar" onclick="rolar()">Rolar</button>
 </div>
