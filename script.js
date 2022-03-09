@@ -28,4 +28,5 @@ function rolar(){
 }
 function spin(){
     dado.classList.add("spin");
+    setTimeout(function(){dado.classList.remove("spin");}, 500);
 }
